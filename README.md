@@ -58,7 +58,7 @@ This project uses the NASA DONKI API to extract and analyze data on CMEs and GST
 Run the script to download CME and GST data from the NASA API, process the data, and generate the CSV output file:
 
 ```bash
-python main.py
+python retrieve_data.ipynb
 ```
 
 This script performs the following steps:
@@ -71,7 +71,7 @@ This script performs the following steps:
 ### Example:
 
 ```bash
-$ python main.py
+$ python retrieve_data.ipynb
 ```
 
 This will generate a CSV file named `merged_nasa_cme_gst_df.csv` in the current directory.
@@ -116,9 +116,8 @@ These results provide insights into the average delay between a CME event and it
 
 ## Files
 
-- `main.py`: The main script that runs the entire analysis.
-- `nasa.env`: Stores the NASA API key (ensure this file is created with your API key).
-- `requirements.txt`: Lists all the dependencies needed for the project.
+- `retrieve_data.ipynb`: The main script that runs the entire analysis.
+- `.env`: Stores the NASA API key (ensure this file is created with your API key).
 - `merged_nasa_cme_gst_df.csv`: The output file containing the merged CME-GST data along with calculated time differences.
 
 
